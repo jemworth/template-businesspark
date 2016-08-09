@@ -1,0 +1,49 @@
+footer
+  #contact.contact
+    .container
+      .col-md-4.col-sm-4.contact-grids.contact-grid1
+        h4 Address
+        h6 flat no:42/16, GM Chowdhury Road,Khulna.
+        h6 +880 1918 691 601
+        h6
+          a(href='mailto:info@example.com') info@yourcompany.com
+      .col-md-2.col-sm-2.contact-grids.contact-grid2
+        h4 Navigation
+        h6
+          a.scroll(href='#about') About
+        h6
+          a.scroll(href='#testimonials') Testimonials
+        h6
+          a.scroll(href='#events') Events
+      .col-md-3.col-sm-3.contact-grids.contact-grid3
+        h4 Follow us
+        ul
+          li
+            a.linkedin(href='#')
+          li
+            a.google(href='#')
+          li
+            a.pinterest(href='#')
+      .col-md-3.col-sm-3.contact-grids.contact-grid4
+        h4 Newsletter
+        form(action='#', method='post')
+          input(type='text', name='your email', placeholder='your email')
+          input(type='submit', value='SUBMIT')
+      .clearfix
+  .footer
+    .container
+      p
+        | © 2016 Business Park. All Rights Reserved 
+!= js()
+script(type='text/javascript').
+  $(document).ready(function() {
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  });
+script(type='text/javascript', src='./js/move-top.js')
+script(type='text/javascript', src='./js/easing.js')
+script(type='text/javascript').
+  jQuery(document).ready(function($) {
+  $(".scroll, .navbar li a, .footer li a").click(function(event){
+  $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+  });
+  });

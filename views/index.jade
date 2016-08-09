@@ -1,0 +1,269 @@
+extends layout
+
+block content
+  .banner
+    h1 Creative Agency 
+    h3 For Your Design Needs
+    h4 Standard Chunk-To generate-Handful of model sentence 
+    a(href='#', data-toggle='modal', data-target='#myModal') READ MORE
+  #myModal.modal.fade(role='dialog')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal') ×
+        .modal-body
+          p
+            | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque semper quam, quis dapibus mi sagittis nec. Donec eget dignissim orci, a scelerisque mauris. Fusce rutrum, enim a elementum condimentum, urna eros rutrum mauris, at ullamcorper odio sapien nec augue.
+  #about.about
+    .container
+      h3 ABOUT US
+      h6
+        | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+      .about-grids
+        .about-grid1
+          .col-md-8.col-sm-8.about-text
+            h4 JULY 20
+            h4 OUR HUMBLE BEGINNINGS
+            p
+              | If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary
+          .col-md-4.col-sm-4.aimg.aboutimage
+            img(src='./img/a1.png', alt=' ')
+          .clearfix
+        .about-grid2
+          .col-md-4.col-sm-4.aimg.aboutimage
+            img(src='./img/a2.png', alt=' ')
+          .col-md-8.col-sm-8.about-text.about-text2
+            h4 AUGUST 28
+            h4 FACING STARTUP BATTLES
+            p
+              | If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary
+          .clearfix
+        .about-grid3
+          .col-md-8.col-sm-8.about-text
+            h4 DECEMBER 14
+            h4 ENTER THE DARK DAYS
+            p
+              | If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary
+          .col-md-4.col-sm-4.aboutimage
+            img(src='./img/a3.png', alt=' ')
+          .clearfix
+  // //About
+  // Services
+  #services.services
+    .container
+      h3 SERVICES WE PROVIDE
+      h6
+        | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+      .service-grids
+        .col-md-3.col-sm-3.service-grid.service-grid1
+          .service-grids-icon
+            img(src='./img/i1.png', alt=' ')
+          .service-grids-text
+            h4 BRANDING
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+        .col-md-3.col-sm-3.service-grid.service-grid2
+          .service-grids-icon
+            img(src='./img/i2.png', alt=' ')
+          .service-grids-text
+            h4 DESIGN
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+        .col-md-3.col-sm-3.service-grid.service-grid3
+          .service-grids-icon
+            img(src='./img/i3.png', alt=' ')
+          .service-grids-text
+            h4 CONSULTANCY
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+        .col-md-3.col-sm-3.service-grid.service-grid4
+          .service-grids-icon
+            img(src='./img/i4.png', alt=' ')
+          .service-grids-text
+            h4 DEVELOPMENT
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+        .clearfix
+  // //Services
+  // Team
+  #team.team
+    .container
+      .theader
+        h3 OUR AMAZING TEAM
+        h6 All the Lorem Ipsum generators 
+      .col-md-4.col-sm-4.team-grid.team-grid1
+        img(src='./img/t1.png', alt=' ')
+        h5 Stewart Drick
+        p Business analyst for the past 10 years
+        ul
+          li
+            a.twitter(href='#')
+          li
+            a.facebook(href='#')
+          li
+            a.pinterest(href='#')
+      .col-md-4.col-sm-4.team-grid.team-grid2
+        img(src='./img/t2.png', alt=' ')
+        h5 Andy Smith
+        p Business analyst for the past 10 years
+        ul
+          li
+            a.twitter(href='#')
+          li
+            a.facebook(href='#')
+          li
+            a.pinterest(href='#')
+      .col-md-4.col-sm-4.team-grid.team-grid3
+        img(src='./img/t3.png', alt=' ')
+        h5 Jessica Jennifer
+        p Business analyst for the past 10 years
+        ul
+          li
+            a.twitter(href='#')
+          li
+            a.facebook(href='#')
+          li
+            a.pinterest(href='#')
+      .clearfix
+  // //Team
+  // Testimonials
+  #testimonials.testimonials
+    #myCarousel.carousel.slide(data-ride='carousel')
+      // Wrapper for slides
+      .carousel-inner(role='listbox')
+        .item.active
+          img(src='./img/testimonialsbg.jpg', alt='Chania')
+          .carousel-caption
+            .hangouts
+              img(src='./img/hangouts.png', alt=' ')
+            p
+              | It was a pleasure to work with the guys ok knight studio.They made sure we were well fed all the time.
+            .person
+              img(src='./img/te1.png', alt=' ')
+              h5 Lora Kristan
+              h6 License to drink inc..
+        .item
+          img(src='./img/testimonialsbg.jpg', alt='Chania')
+          .carousel-caption
+            .hangouts
+              img(src='./img/hangouts.png', alt=' ')
+            p
+              | All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+            .person
+              img(src='./img/te2.png', alt=' ')
+              h5 Kaira Luptin
+              h6 License to drink inc..
+        .item
+          img(src='./img/testimonialsbg.jpg', alt='Chania')
+          .carousel-caption
+            .hangouts
+              img(src='./img/hangouts.png', alt=' ')
+            p
+              | Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            .person
+              img(src='./img/te3.png', alt=' ')
+              h5 Prince Dennis
+              h6 License to drink inc..
+      a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+        span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        span.sr-only Previous
+      a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+        span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+        span.sr-only Next
+  #portfolio.works
+    .container
+      h3 PORTFOLIO
+      h6
+        | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      .work-grids
+        .col-md-4.col-sm-4.wg
+          a.swipebox(href='./img/big1.jpg', title='BUSINESS PARK')
+            img.img-responsive(src='./img/w1.jpg', alt=' ')
+            .winfo
+              img(src='./img/hover.png', alt='')
+        .col-md-4.col-sm-4.wg
+          a.swipebox(href='./img/big2.jpg', title='BUSINESS PARK')
+            img.img-responsive(src='./img/w2.jpg', alt=' ')
+            .winfo
+              img(src='./img/hover.png', alt='')
+        .col-md-4.col-sm-4.wg
+          a.swipebox(href='./img/big3.jpg', title='BUSINESS PARK')
+            img.img-responsive(src='./img/w3.jpg', alt=' ')
+            .winfo
+              img(src='./img/hover.png', alt='')
+        .col-md-4.col-sm-4.wg
+          a.swipebox(href='./img/big4.jpg', title='BUSINESS PARK')
+            img.img-responsive(src='./img/w4.jpg', alt=' ')
+            .winfo
+              img(src='./img/hover.png', alt='')
+        .col-md-4.col-sm-4.wg
+          a.swipebox(href='./img/big5.jpg', title='BUSINESS PARK')
+            img.img-responsive(src='./img/w5.jpg', alt=' ')
+            .winfo
+              img(src='./img/hover.png', alt='')
+        .col-md-4.col-sm-4.wg
+          a.swipebox(href='./img/big6.jpg', title='BUSINESS PARK')
+            img.img-responsive(src='./img/w6.jpg', alt=' ')
+            .winfo
+              img(src='./img/hover.png', alt='')
+        .clearfix
+  // swipe box js
+  script(src='js/jquery.swipebox.min.js')
+  script(type='text/javascript').
+    jQuery(function($) {
+    $(".swipebox").swipebox();
+    });
+
+  .clients
+    .container
+      .col-md-3.col-sm-3.client.client1
+        h1(style="color:white !important;margin:0px !important;") LOGO HERE
+      .col-md-3.col-sm-3.client.client2
+        h1(style="color:white !important;margin:0px !important;") LOGO HERE
+      .col-md-3.col-sm-3.client
+        h1(style="color:white !important;margin:0px !important;") LOGO HERE
+      .col-md-3.col-sm-3.client
+        h1(style="color:white !important;margin:0px !important;") LOGO HERE
+      .clearfix
+  #events.events
+    .container
+      h3 LATEST NEWS AND EVENTS
+      h6
+        | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      .egrids
+        .col-md-4.col-sm-4.event-grid.event-grid1
+          img(src='./img/e1.jpg', alt=' ')
+          .etext
+            h4 Contrary to popular belief
+            .cal
+              img(src='./img/calendar.png', alt='')
+            .date
+              h5 26 jan 2016
+            .clearfix
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+        .col-md-4.col-sm-4.event-grid.event-grid2
+          img(src='./img/e2.jpg', alt=' ')
+          .etext
+            h4 Contrary to popular belief
+            .cal
+              img(src='./img/calendar.png', alt='')
+            .date
+              h5 26 feb 2016
+            .clearfix
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+        .col-md-4.col-sm-4.event-grid.event-grid3
+          img(src='./img/e3.jpg', alt=' ')
+          .etext
+            h4 Contrary to popular belief
+            .cal
+              img(src='./img/calendar.png', alt='')
+            .date
+              h5 26 mar 2016
+            .clearfix
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
+        .clearfix
+  .map
+    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22702.22744502486!2d11.113366067229226!3d44.662878362361056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fc3eca9065c15%3A0x12ec8a03aadae866!2s40019+Sant'Agata+Bolognese+BO%2C+Italy!5e0!3m2!1sen!2sin!4v1451281303075", allowfullscreen='')
